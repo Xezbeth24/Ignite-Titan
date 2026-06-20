@@ -1,0 +1,18 @@
+
+import os
+from openai import OpenAI
+
+# Replace the placeholder below with your actual xAI key
+# Store the key in environment variable: export XAI_API_KEY="your_key"
+client = OpenAI(
+    api_key=os.getenv("XAI_API_KEY", ""),
+    base_url="https://api.x.ai/v1"
+)
+
+try:
+    models = client.models.list()
+    for model in models:
+        print(f"Model ID: {model.id}")
+except Exception as e:
+    print(f"Error: {e}"
+

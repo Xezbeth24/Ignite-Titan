@@ -1,0 +1,11 @@
+langchain
+langchain-chroma
+langchain-google-genai
+langchain-openai
+chromadb
+pypdf
+streamlit
+python-dotenv
+
+# For reproducible installs, generate a pinned file from your active env:
+# python scripts/pin_requirements.py --out requirements-pinned.txt
